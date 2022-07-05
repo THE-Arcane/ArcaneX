@@ -1,10 +1,10 @@
 from pyrogram import Client
 from pyrogram.types import Message
-from AltronUserbot.helpers.command import commandpro
+from ArcaneUserbot.helpers.command import commandpro
 from config import call_py
-from AltronUserbot.helpers.decorators import errors, sudo_users_only
-from AltronUserbot.helpers.handlers import skip_current_song, skip_item
-from AltronUserbot.helpers.queues import QUEUE, clear_queue
+from ArcaneUserbot.helpers.decorators import errors, sudo_users_only
+from ArcaneUserbot.helpers.handlers import skip_current_song, skip_item
+from ArcaneUserbot.helpers.queues import QUEUE, clear_queue
 
 
 @Client.on_message(commandpro(["!skip", ".skip", "/skip", "S", "Skip", "Next"]))
