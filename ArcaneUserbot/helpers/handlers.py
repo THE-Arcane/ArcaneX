@@ -1,4 +1,4 @@
-From pyrogram.raw.base import Update
+from pyrogram.raw.base import Update
 from pytgcalls.types.input_stream import AudioPiped, AudioVideoPiped
 from pytgcalls.types.input_stream.quality import (
     HighQualityAudio,
