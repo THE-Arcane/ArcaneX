@@ -1,0 +1,41 @@
+{
+    "name": "Arcane Userbot",
+    "description": "An Advanced Music+Video And Spam userbot.",
+    "logo": "https://telegra.ph/file/b7d01ce18bc5b66491a16.jpg",
+    "keywords": [
+        "Telegram",
+        "MusicPlayer",
+        "VideoPlayer"
+    ],
+    "env": {
+        "SESSION": {
+            "description": "Pyrogram String Session",
+            "required": true
+        },
+        "API_ID": {
+            "description": "Get From my.telegram.org/apps",
+            "required": true
+        },
+        "API_HASH": {
+            "description": "API HASH Get it From my.telegram.org/apps",
+            "required": true
+        },
+        "SUDO_USERS": {
+            "description": "sudo id)",
+            "required": true
+        }
+    },
+    "addons": [],
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    },
+    "stack": "container"
+}
